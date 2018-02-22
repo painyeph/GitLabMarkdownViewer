@@ -1,99 +1,73 @@
-/*
-
-Original highlight.js style (c) Ivan Sagalaev <maniac@softwaremaniacs.org>
-
-*/
-
-.hljs {
-  display: block;
-  overflow-x: auto;
-  padding: 0.5em;
-  background: #F0F0F0;
+pre {
+ padding:10px 15px;
+ border:1px solid rgba(0,0,0,0.15);
+ box-shadow:0 1px 0 0 rgba(0,0,0,0.15);
+ border-radius:3px;
+ overflow-x:auto;
+ margin:20px 0
 }
-
-
-/* Base color: saturation 0; */
-
+pre code {
+ border-color:transparent;
+ color:inherit;
+ background-color:transparent
+}
 .hljs,
 .hljs-subst {
-  color: #444;
+  color:black
 }
-
-.hljs-comment {
-  color: #888888;
+.hljs-keyword {
+ font-weight:bold
 }
-
-.hljs-keyword,
-.hljs-attribute,
-.hljs-selector-tag,
-.hljs-meta-keyword,
-.hljs-doctag,
-.hljs-name {
-  font-weight: bold;
+.hljs-built_in {
+ color:black
 }
-
-
-/* User color: hue: 0 */
-
-.hljs-type,
-.hljs-string,
-.hljs-number,
-.hljs-selector-id,
-.hljs-selector-class,
-.hljs-quote,
-.hljs-template-tag,
-.hljs-deletion {
-  color: #880000;
+.hljs-type {
+ color:#458;
+ font-weight:bold
 }
-
-.hljs-title,
-.hljs-section {
-  color: #880000;
-  font-weight: bold;
-}
-
-.hljs-regexp,
-.hljs-symbol,
-.hljs-variable,
-.hljs-template-variable,
-.hljs-link,
-.hljs-selector-attr,
-.hljs-selector-pseudo {
-  color: #BC6060;
-}
-
-
-/* Language color: hue: 90; */
-
 .hljs-literal {
-  color: #78A960;
+ color:#0086b3
 }
-
-.hljs-built_in,
-.hljs-bullet,
-.hljs-code,
-.hljs-addition {
-  color: #397300;
+.hljs-number {
+ color:#099
 }
-
-
-/* Meta color: hue: 200 */
-
-.hljs-meta {
-  color: #1f7199;
+.hljs-regexp {
+ color:#009926
 }
-
-.hljs-meta-string {
-  color: #4d99bf;
+.hljs-string {
+ color:#d14
 }
-
-
-/* Misc effects */
-
-.hljs-emphasis {
-  font-style: italic;
+.hljs-symbol {
+ color:#009926
 }
-
-.hljs-strong {
-  font-weight: bold;
+.hljs-class .hljs-title {
+ color:#458;
+ font-weight:bold
+}
+.hljs-title {
+ color:#900;
+ font-weight:bold
+}
+.hljs-params {
+ color:black
+}
+.hljs-comment {
+ color:#998;
+ font-style:italic
+}
+.hljs-prompt {
+ font-weight:bold
+}
+.hljs-preprocessor,
+.hljs-preprocessor .hljs-keyword,
+.hljs-preprocessor .hljs-string {
+ color:#999;
+ font-weight:bold
+}
+.language-text .hljs-attribute,
+.language-text .hljs-keyword,
+.language-text .hljs-number,
+.language-text .hljs-title {
+  color:black;
+  font-weight:normal
 }
