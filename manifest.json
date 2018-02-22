@@ -1,0 +1,51 @@
+{
+
+  "manifest_version": 2,
+  "name": "GitLab Markdown Viewer",
+  "version": "1.0",
+  "description": "Renders markdown files in GitLab style.",
+
+  "icons": {
+    "16": "icons/16x16.png",
+    "48": "icons/48x48.png",
+    "128": "icons/128x128.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["file:///*.md", "file:///*.markdown"],
+      "js": ["js/markdown-it.min.js",
+             "js/highlight.pack.min.js",
+             "js/katex.min.js",
+             "js/texmath.js",
+             "js/main.js"
+             ]
+    }
+  ],
+
+  "web_accessible_resources": [
+    "css/gitlab.css",
+    "css/highlight.css",
+    "css/katex.min.css",
+    "css/fonts/KaTeX_AMS-Regular.woff2",
+    "css/fonts/KaTeX_Caligraphic-Bold.woff2",
+    "css/fonts/KaTeX_Caligraphic-Regular.woff2",
+    "css/fonts/KaTeX_Fraktur-Bold.woff2",
+    "css/fonts/KaTeX_Fraktur-Regular.woff2",
+    "css/fonts/KaTeX_Main-Bold.woff2",
+    "css/fonts/KaTeX_Main-BoldItalic.woff2",
+    "css/fonts/KaTeX_Main-Italic.woff2",
+    "css/fonts/KaTeX_Main-Regular.woff2",
+    "css/fonts/KaTeX_Math-Italic.woff2",
+    "css/fonts/KaTeX_SansSerif-Bold.woff2",
+    "css/fonts/KaTeX_SansSerif-Italic.woff2",
+    "css/fonts/KaTeX_SansSerif-Regular.woff2",
+    "css/fonts/KaTeX_Script-Regular.woff2",
+    "css/fonts/KaTeX_Size1-Regular.woff2",
+    "css/fonts/KaTeX_Size2-Regular.woff2",
+    "css/fonts/KaTeX_Size3-Regular.woff2",
+    "css/fonts/KaTeX_Size4-Regular.woff2",
+    "css/fonts/KaTeX_Typewriter-Regular.woff2"
+  ]
+
+}
