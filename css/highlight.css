@@ -51,10 +51,7 @@
  color:#999;
  font-weight:bold
 }
-.language-text .hljs-attribute,
-.language-text .hljs-keyword,
-.language-text .hljs-number,
-.language-text .hljs-title {
-  color:black;
-  font-weight:normal
+code:not([class]) span, code.language-text span, code.language-txt span {
+  color:black !important;
+  font-weight:normal !important
 }
