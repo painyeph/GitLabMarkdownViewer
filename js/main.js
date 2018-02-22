@@ -33,7 +33,7 @@ client.onloadend = function() {
 
 	// Insert html for the markdown into an element for processing.
 	var markdownRoot = document.createElement('div');
-	markdownRoot.className = "md";
+	markdownRoot.className = "wiki";
 	markdownRoot.innerHTML = markdownit({
 		html: true,
 		linkify: true,
