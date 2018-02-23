@@ -53,5 +53,6 @@
 }
 code:not([class]) span, code.language-text span, code.language-txt span {
   color:black !important;
-  font-weight:normal !important
+  font-weight:normal !important;
+  font-style:normal !important
 }
