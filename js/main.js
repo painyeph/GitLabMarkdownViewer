@@ -51,7 +51,9 @@ client.onloadend = function() {
 
 			return ''; // use external default escaping
 		}
-	}).use(texmath.use(katex), {delimiters: 'gitlab'}).render(client.responseText);
+	}).use(texmath.use(katex), {delimiters: 'gitlab'})
+	  .use(markdownitHTML5Embed, { html5embed: { useImageSyntax: true } })
+	  .render(client.responseText);
 
 	// Trample out script elements.
 	markdownRoot.querySelectorAll('script').forEach(each => {

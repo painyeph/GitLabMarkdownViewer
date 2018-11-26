@@ -2,7 +2,7 @@
 
   "manifest_version": 2,
   "name": "GitLab Markdown Viewer",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "description": "Renders markdown files in GitLab style.",
 
   "icons": {
@@ -15,6 +15,7 @@
     {
       "matches": ["file:///*.md", "file:///*.markdown"],
       "js": ["js/markdown-it.min.js",
+             "js/markdown-it-html5-embed.js",
              "js/highlight.pack.min.js",
              "js/katex.min.js",
              "js/texmath.js",
