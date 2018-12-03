@@ -92,5 +92,16 @@ client.onloadend = function() {
 
 	// Finally insert the markdown.
 	document.body.appendChild(markdownRoot);
+
+	// Jump to anchor
+	if (location.hash) {
+		setTimeout(function () {
+			if (typeof browser !== "undefined") {  // Firefox
+				window.location.hash = location.hash;
+			} else {  // Chrome
+				window.location.href = location.hash;
+			}
+		}, 0);
+	}
 }
 client.send();
