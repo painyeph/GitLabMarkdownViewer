@@ -117,7 +117,7 @@ html[dir="rtl"] .select2-container .select2-choice>.select2-chosen {
  position:absolute;
  right:24px;
  top:8px;
- font-size:1px;
+ font-size:0.0625rem;
  text-decoration:none;
  border:0;
  background:url(./select2-d6b5d8d83dbc18fb8d77c8761d331cd9e5123c9684950bab0406e98a24ac5ae8.png) right top no-repeat;
@@ -532,7 +532,7 @@ html[dir="rtl"] .select2-container-multi .select2-choices .select2-search-choice
  position:absolute;
  right:3px;
  top:4px;
- font-size:1px;
+ font-size:0.0625rem;
  outline:none;
  background:url(./select2-d6b5d8d83dbc18fb8d77c8761d331cd9e5123c9684950bab0406e98a24ac5ae8.png) right top no-repeat
 }
@@ -663,7 +663,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
  overflow:hidden;
  margin:0;
  padding:5px 3px;
- font-size:14px;
+ font-size:0.875rem;
  line-height:20px;
  font-weight:bold;
  color:#333;
@@ -722,7 +722,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
 }
 .pika-table th {
  color:#999;
- font-size:12px;
+ font-size:0.75rem;
  line-height:25px;
  font-weight:bold;
  text-align:center
@@ -742,7 +742,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
  width:100%;
  padding:5px;
  color:#666;
- font-size:12px;
+ font-size:0.75rem;
  line-height:15px;
  text-align:right;
  background:#f5f5f5
@@ -771,7 +771,7 @@ html[dir="rtl"] .select2-container-multi .select2-search-choice-close {
  border-radius:3px
 }
 .pika-week {
- font-size:11px;
+ font-size:0.6875rem;
  color:#999
 }
 .is-inrange .pika-button {
@@ -924,7 +924,7 @@ optgroup {
  font-weight:bold
 }
 table {
- font-size:14px;
+ font-size:0.875rem;
  border-collapse:collapse;
  border-spacing:0
 }
@@ -1000,12 +1000,12 @@ td,th {
  box-sizing:border-box
 }
 html {
- font-size:10px;
+ /*font-size:0.625rem;*/
  -webkit-tap-highlight-color:transparent
 }
 body {
  font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
- font-size:14px;
+ /*font-size:0.875rem;*/
  line-height:1.42857143;
  color:rgba(0,0,0,0.85);
  background-color:#fff
@@ -1111,35 +1111,35 @@ h4 small,h4 .small,.h4 small,.h4 .small,h5 small,h5 .small,.h5 small,.h5 .small,
  font-size:75%
 }
 h1,.h1 {
- font-size:36px
+ font-size:2.25rem
 }
 h2,.h2 {
- font-size:30px
+ font-size:1.875rem
 }
 h3,.h3 {
- font-size:24px
+ font-size:1.5rem
 }
 h4,.h4 {
- font-size:18px
+ font-size:1.125rem
 }
 h5,.h5 {
- font-size:14px
+ font-size:0.875rem
 }
 h6,.h6 {
- font-size:12px
+ font-size:0.75rem
 }
 p {
  margin:0 0 10px
 }
 .lead {
  margin-bottom:20px;
- font-size:16px;
+ font-size:1rem;
  font-weight:300;
  line-height:1.4
 }
 @media (min-width: 768px) {
  .lead {
-  font-size:21px
+  font-size:1.3125rem
  }
 }
 small,.small {
@@ -1370,7 +1370,7 @@ pre {
  display:block;
  padding:9.5px;
  margin:0 0 10px;
- font-size:13px;
+ font-size:0.8125rem;
  line-height:1.42857143;
  word-break:break-all;
  word-wrap:break-word;
@@ -2215,7 +2215,7 @@ legend {
  width:100%;
  padding:0;
  margin-bottom:20px;
- font-size:21px;
+ font-size:1.3125rem;
  line-height:inherit;
  color:rgba(0,0,0,0.85);
  border:0;
@@ -2255,7 +2255,7 @@ input[type="file"]:focus,input[type="radio"]:focus,input[type="checkbox"]:focus 
 output {
  display:block;
  padding-top:7px;
- font-size:14px;
+ font-size:0.875rem;
  line-height:1.42857143;
  color:rgba(0,0,0,0.85)
 }
@@ -2264,7 +2264,7 @@ output {
  width:100%;
  height:34px;
  padding:6px 16px;
- font-size:14px;
+ font-size:0.875rem;
  line-height:1.42857143;
  color:rgba(0,0,0,0.85);
  background-color:#fff;
@@ -2380,7 +2380,7 @@ input[type="radio"][disabled],input[type="radio"].disabled,fieldset[disabled] in
 .input-sm,.input-group-sm>.form-control,.search .input-group-sm>form,.input-group-sm>.input-group-addon,.input-group-sm>.input-group-btn>.btn {
  height:30px;
  padding:5px 10px;
- font-size:12px;
+ font-size:0.75rem;
  line-height:1.5;
  border-radius:3px
 }
@@ -2394,7 +2394,7 @@ textarea.input-sm,.input-group-sm>textarea.form-control,.input-group-sm>textarea
 .form-group-sm .form-control,.form-group-sm .search form,.search .form-group-sm form {
  height:30px;
  padding:5px 10px;
- font-size:12px;
+ font-size:0.75rem;
  line-height:1.5;
  border-radius:3px
 }
@@ -2409,13 +2409,13 @@ textarea.input-sm,.input-group-sm>textarea.form-control,.input-group-sm>textarea
  height:30px;
  min-height:32px;
  padding:6px 10px;
- font-size:12px;
+ font-size:0.75rem;
  line-height:1.5
 }
 .input-lg,.input-group-lg>.form-control,.search .input-group-lg>form,.input-group-lg>.input-group-addon,.input-group-lg>.input-group-btn>.btn {
  height:46px;
  padding:10px 16px;
- font-size:18px;
+ font-size:1.125rem;
  line-height:1.3333333;
  border-radius:3px
 }
@@ -2429,7 +2429,7 @@ textarea.input-lg,.input-group-lg>textarea.form-control,.input-group-lg>textarea
 .form-group-lg .form-control,.form-group-lg .search form,.search .form-group-lg form {
  height:46px;
  padding:10px 16px;
- font-size:18px;
+ font-size:1.125rem;
  line-height:1.3333333;
  border-radius:3px
 }
@@ -2444,7 +2444,7 @@ textarea.input-lg,.input-group-lg>textarea.form-control,.input-group-lg>textarea
  height:46px;
  min-height:38px;
  padding:11px 16px;
- font-size:18px;
+ font-size:1.125rem;
  line-height:1.3333333
 }
 .has-feedback {
@@ -2627,13 +2627,13 @@ textarea.input-lg,.input-group-lg>textarea.form-control,.input-group-lg>textarea
 @media (min-width: 768px) {
  .form-horizontal .form-group-lg .control-label {
   padding-top:11px;
-  font-size:18px
+  font-size:1.125rem
  }
 }
 @media (min-width: 768px) {
  .form-horizontal .form-group-sm .control-label {
   padding-top:6px;
-  font-size:12px
+  font-size:0.75rem
  }
 }
 .btn {
@@ -2648,7 +2648,7 @@ textarea.input-lg,.input-group-lg>textarea.form-control,.input-group-lg>textarea
  border:1px solid transparent;
  white-space:nowrap;
  padding:6px 16px;
- font-size:14px;
+ font-size:0.875rem;
  line-height:1.42857143;
  border-radius:3px;
  -webkit-user-select:none;
@@ -2921,19 +2921,19 @@ a.btn.disabled,fieldset[disabled] a.btn {
 }
 .btn-lg,.btn-group-lg>.btn {
  padding:10px 16px;
- font-size:18px;
+ font-size:1.125rem;
  line-height:1.3333333;
  border-radius:3px
 }
 .btn-sm,.btn-group-sm>.btn {
  padding:5px 10px;
- font-size:12px;
+ font-size:0.75rem;
  line-height:1.5;
  border-radius:3px
 }
 .btn-xs,.btn-group-xs>.btn {
  padding:1px 5px;
- font-size:12px;
+ font-size:0.75rem;
  line-height:1.5;
  border-radius:3px
 }
@@ -3168,7 +3168,7 @@ tbody.collapse.in {
 }
 .input-group-addon {
  padding:6px 16px;
- font-size:14px;
+ font-size:0.875rem;
  font-weight:normal;
  line-height:1;
  color:rgba(0,0,0,0.85);
@@ -3179,12 +3179,12 @@ tbody.collapse.in {
 }
 .input-group-addon.input-sm,.search .input-group-sm>form.input-group-addon,.input-group-sm>.input-group-addon,.input-group-sm>.input-group-btn>.input-group-addon.btn {
  padding:5px 10px;
- font-size:12px;
+ font-size:0.75rem;
  border-radius:3px
 }
 .input-group-addon.input-lg,.search .input-group-lg>form.input-group-addon,.input-group-lg>.input-group-addon,.input-group-lg>.input-group-btn>.input-group-addon.btn {
  padding:10px 16px;
- font-size:18px;
+ font-size:1.125rem;
  border-radius:3px
 }
 .input-group-addon input[type="radio"],.input-group-addon input[type="checkbox"] {
@@ -3486,7 +3486,7 @@ tbody.collapse.in {
 .navbar-brand {
  float:left;
  padding:15px 15px;
- font-size:18px;
+ font-size:1.125rem;
  line-height:20px;
  height:50px
 }
@@ -3922,7 +3922,7 @@ tbody.collapse.in {
 }
 .pagination-lg>li>a,.pagination-lg>li>span {
  padding:10px 16px;
- font-size:18px;
+ font-size:1.125rem;
  line-height:1.3333333
 }
 .pagination-lg>li:first-child>a,.pagination-lg>li:first-child>span {
@@ -3935,7 +3935,7 @@ tbody.collapse.in {
 }
 .pagination-sm>li>a,.pagination-sm>li>span {
  padding:5px 10px;
- font-size:12px;
+ font-size:0.75rem;
  line-height:1.5
 }
 .pagination-sm>li:first-child>a,.pagination-sm>li:first-child>span {
@@ -4048,7 +4048,7 @@ a.label:hover,.shortcut-mappings a.key:hover,.shortcut-mappings .participants-mo
  display:inline-block;
  min-width:10px;
  padding:3px 7px;
- font-size:12px;
+ font-size:0.75rem;
  font-weight:bold;
  color:rgba(0,0,0,0.55);
  line-height:1;
@@ -4188,7 +4188,7 @@ a.badge:hover,.participants-more .badge.btn-link:hover,.user-list-more .badge.bt
  float:left;
  width:0%;
  height:100%;
- font-size:12px;
+ font-size:0.75rem;
  line-height:20px;
  color:#fff;
  text-align:center;
@@ -4409,7 +4409,7 @@ a.list-group-item-danger.active,a.list-group-item-danger.active:hover,.participa
 }
 .close {
  float:right;
- font-size:21px;
+ font-size:1.3125rem;
  font-weight:bold;
  line-height:1;
  color:#000;
@@ -4461,7 +4461,7 @@ button.close {
 .panel-title {
  margin-top:0;
  margin-bottom:0;
- font-size:16px;
+ font-size:1rem;
  color:inherit
 }
 .panel-title>a,.panel-title>small,.panel-title>.small,.panel-title>small>a,.panel-title>.small>a {
@@ -4847,7 +4847,7 @@ button.close {
  word-break:normal;
  word-spacing:normal;
  word-wrap:normal;
- font-size:12px;
+ font-size:0.75rem;
  opacity:0;
  filter:alpha(opacity=0)
 }
@@ -4965,7 +4965,7 @@ button.close {
  word-break:normal;
  word-spacing:normal;
  word-wrap:normal;
- font-size:14px;
+ font-size:0.875rem;
  background-color:#fff;
  background-clip:padding-box;
  border:1px solid #ccc;
@@ -4989,7 +4989,7 @@ button.close {
 .popover-title {
  margin:0;
  padding:8px 14px;
- font-size:14px;
+ font-size:0.875rem;
  background-color:#f7f7f7;
  border-bottom:1px solid #ebebeb;
  border-radius:2px 2px 0 0
@@ -5100,7 +5100,7 @@ button.close {
  visibility:hidden
 }
 .text-hide {
- font:0/0 a;
+ font:NaNrem a;
  color:transparent;
  text-shadow:none;
  background-color:transparent;
@@ -5318,7 +5318,7 @@ summary {
 }
 .label,.shortcut-mappings .key {
  padding:4px 5px;
- font-size:12px;
+ font-size:0.75rem;
  font-style:normal;
  font-weight:normal;
  display:inline-block
@@ -5356,7 +5356,7 @@ summary {
 }
 .panel.panel-small .panel-heading {
  padding:6px 15px;
- font-size:13px;
+ font-size:0.8125rem;
  font-weight:normal
 }
 .panel.panel-small .panel-heading a {
@@ -5677,7 +5677,7 @@ a {
  margin-right:4px
 }
 .avatar.center {
- font-size:14px;
+ font-size:0.875rem;
  line-height:1.8em;
  text-align:center
 }
@@ -5693,48 +5693,48 @@ a {
  vertical-align:top
 }
 .identicon.s16 {
- font-size:12px;
+ font-size:0.75rem;
  line-height:1.33
 }
 .identicon.s24 {
- font-size:14px;
+ font-size:0.875rem;
  line-height:1.8
 }
 .identicon.s26 {
- font-size:20px;
+ font-size:1.25rem;
  line-height:1.33
 }
 .identicon.s32 {
- font-size:20px;
+ font-size:1.25rem;
  line-height:30px
 }
 .identicon.s40 {
- font-size:16px;
+ font-size:1rem;
  line-height:38px
 }
 .identicon.s60 {
- font-size:32px;
+ font-size:2rem;
  line-height:58px
 }
 .identicon.s70 {
- font-size:34px;
+ font-size:2.125rem;
  line-height:70px
 }
 .identicon.s90 {
- font-size:36px;
+ font-size:2.25rem;
  line-height:88px
 }
 .identicon.s110 {
- font-size:40px;
+ font-size:2.5rem;
  line-height:108px;
  font-weight:300
 }
 .identicon.s140 {
- font-size:72px;
+ font-size:4.5rem;
  line-height:138px
 }
 .identicon.s160 {
- font-size:96px;
+ font-size:6rem;
  line-height:158px
 }
 .avatar-container {
@@ -5755,7 +5755,7 @@ a {
  border:1px solid #e5e5e5;
  border-radius:1em;
  font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
- font-size:9px;
+ font-size:0.5625rem;
  line-height:16px;
  text-align:center
 }
@@ -5772,7 +5772,7 @@ a {
  padding:20px;
  color:rgba(0,0,0,0.85);
  font-weight:normal;
- font-size:14px;
+ font-size:0.875rem;
  line-height:36px
 }
 .nothing-here-block.diff-collapsed {
@@ -5877,17 +5877,17 @@ a {
 }
 .cover-block .cover-title {
  color:rgba(0,0,0,0.85);
- font-size:23px
+ font-size:1.4375rem
 }
 .cover-block .cover-title h1 {
  color:rgba(0,0,0,0.85);
  margin-bottom:6px;
- font-size:23px
+ font-size:1.4375rem
 }
 .cover-block .cover-title .visibility-icon {
  display:inline-block;
  margin-left:5px;
- font-size:18px;
+ font-size:1.125rem;
  color:#555555
 }
 .cover-block .cover-title p {
@@ -5935,7 +5935,7 @@ a {
 .cover-block .group-info h1 {
  display:inline;
  font-weight:normal;
- font-size:24px;
+ font-size:1.5rem;
  color:rgba(0,0,0,0.85)
 }
 .block-connector {
@@ -5995,7 +5995,7 @@ a {
 }
 .landing .inner-content h4 {
  color:rgba(0,0,0,0.85);
- font-size:17px
+ font-size:1.0625rem
 }
 .landing .inner-content p {
  color:rgba(0,0,0,0.85);
@@ -6056,7 +6056,7 @@ a {
 }
 .btn {
  border-radius:3px;
- font-size:14px;
+ font-size:0.875rem;
  font-weight:400;
  padding:6px 10px;
  background-color:#fff;
@@ -6090,7 +6090,7 @@ a {
 }
 .btn.btn-small,.btn.btn-sm,.btn-group-sm>.btn {
  padding:4px 10px;
- font-size:13px;
+ font-size:0.8125rem;
  line-height:18px
 }
 .btn.btn-xs,.btn-group-xs>.btn {
@@ -6346,7 +6346,7 @@ a {
 }
 .input-group-btn .btn {
  border-radius:3px;
- font-size:14px;
+ font-size:0.875rem;
  font-weight:400;
  padding:6px 10px
 }
@@ -6464,7 +6464,7 @@ a {
  max-width:70%
 }
 .user-calendar-activities .user-calendar-activities-loading {
- font-size:24px
+ font-size:1.5rem
 }
 .user-calendar {
  text-align:center
@@ -6477,17 +6477,17 @@ a {
  stroke:#000
 }
 .user-contrib-text {
- font-size:12px;
+ font-size:0.75rem;
  fill:#959494
 }
 .calendar-hint {
  margin-top:-23px;
  float:right;
- font-size:12px
+ font-size:0.75rem
 }
 .pika-single.gitlab-theme .pika-label {
  color:rgba(0,0,0,0.55);
- font-size:14px;
+ font-size:0.875rem;
  font-weight:normal
 }
 .pika-single.gitlab-theme th {
@@ -6647,7 +6647,7 @@ a {
 }
 .slead {
  color:rgba(0,0,0,0.85);
- font-size:14px;
+ font-size:0.875rem;
  margin-bottom:12px;
  font-weight:normal;
  line-height:24px
@@ -6701,7 +6701,7 @@ hr {
  color:#1b69b6
 }
 .back-link {
- font-size:14px
+ font-size:0.875rem
 }
 table a code {
  position:relative;
@@ -6712,7 +6712,7 @@ table a code {
  margin:20px auto;
  height:40px;
  color:#555;
- font-size:32px;
+ font-size:2rem;
  text-align:center
 }
 span.update-author {
@@ -6775,7 +6775,7 @@ li.note .note-title li {
 .git_error_tips pre {
  background:#fff;
  border:none;
- font-size:12px
+ font-size:0.75rem
 }
 .error-message {
  padding:10px;
@@ -6880,12 +6880,12 @@ table td.permission-x {
  font-weight:bold
 }
 .header-with-avatar .username {
- font-size:18px;
+ font-size:1.125rem;
  color:#666;
  margin-top:8px
 }
 .header-with-avatar .description {
- font-size:14px;
+ font-size:0.875rem;
  color:#666;
  margin-top:8px
 }
@@ -6991,7 +6991,7 @@ table td.permission-x {
  padding:6px 8px 6px 10px;
  background-color:#fff;
  color:rgba(0,0,0,0.85);
- font-size:14px;
+ font-size:0.875rem;
  text-align:left;
  border:1px solid #e5e5e5;
  border-radius:3px;
@@ -7023,7 +7023,7 @@ table td.permission-x {
  color:#c4c4c4
 }
 .dropdown-toggle .fa-chevron-down,.dropdown-menu-toggle .fa-chevron-down {
- font-size:10px;
+ font-size:0.625rem;
  position:relative;
  top:-3px;
  margin-left:5px
@@ -7051,7 +7051,7 @@ table td.permission-x {
  position:absolute
 }
 .dropdown-menu-toggle .fa.fa-spinner {
- font-size:16px;
+ font-size:1rem;
  margin-top:-3px
 }
 .dropdown-menu-toggle .fa-chevron-down,.dropdown-menu-toggle .fa-spinner {
@@ -7069,7 +7069,7 @@ table td.permission-x {
  min-width:240px;
  margin-top:2px;
  margin-bottom:0;
- font-size:14px;
+ font-size:0.875rem;
  font-weight:normal;
  padding:8px 0;
  background-color:#fff;
@@ -7156,7 +7156,7 @@ table td.permission-x {
 }
 .dropdown-menu .dropdown-header,.dropdown-menu-nav .dropdown-header {
  color:rgba(0,0,0,0.55);
- font-size:13px;
+ font-size:0.8125rem;
  line-height:22px;
  padding:0 16px
 }
@@ -7293,7 +7293,7 @@ table td.permission-x {
  top:0;
  padding:0;
  color:#bfbfbf;
- font-size:14px;
+ font-size:0.875rem;
  border:0;
  background:none;
  outline:0
@@ -7321,7 +7321,7 @@ table td.permission-x {
  top:10px;
  right:20px;
  color:#c7c7c7;
- font-size:12px;
+ font-size:0.75rem;
  pointer-events:none
 }
 .dropdown-input .dropdown-input-clear {
@@ -7330,7 +7330,7 @@ table td.permission-x {
  pointer-events:all;
  right:22px;
  top:9px;
- font-size:14px
+ font-size:0.875rem
 }
 .dropdown-input.has-value .dropdown-input-clear {
  display:block
@@ -7370,7 +7370,7 @@ table td.permission-x {
 .dropdown-footer {
  padding-top:10px;
  margin-top:10px;
- font-size:13px;
+ font-size:0.8125rem;
  border-top:1px solid rgba(0,0,0,0.1)
 }
 .dropdown-due-date-footer {
@@ -7380,7 +7380,7 @@ table td.permission-x {
  border-top:0
 }
 .dropdown-footer-list {
- font-size:14px
+ font-size:0.875rem
 }
 .dropdown-footer-list a {
  cursor:pointer;
@@ -7395,7 +7395,7 @@ table td.permission-x {
  display:none;
  z-index:9;
  background-color:rgba(255,255,255,0.6);
- font-size:28px
+ font-size:1.75rem
 }
 .dropdown-loading .fa {
  position:absolute;
@@ -7496,7 +7496,7 @@ table td.permission-x {
 }
 .file-holder .file-title .file-actions .btn {
  padding:0 10px;
- font-size:13px;
+ font-size:0.8125rem;
  line-height:28px
 }
 .file-holder .file-title a:not(.btn) {
@@ -7660,7 +7660,7 @@ span.idiff.right {
 }
 .file-title-flex-parent .file-actions .btn {
  padding:0 10px;
- font-size:13px;
+ font-size:0.8125rem;
  line-height:28px;
  display:inline-block;
  float:none
@@ -8056,7 +8056,7 @@ span.idiff.right {
  height:17px
 }
 .filter-dropdown-item .dropdown-light-content {
- font-size:14px;
+ font-size:0.875rem;
  font-weight:400
 }
 .filter-dropdown-item .dropdown-user {
@@ -8081,7 +8081,7 @@ span.idiff.right {
  cursor:pointer;
  margin:0;
  margin-bottom:16px;
- font-size:14px;
+ font-size:0.875rem;
  position:relative;
  z-index:1
 }
@@ -8316,7 +8316,7 @@ header.navbar-gitlab .container-fluid {
 }
 header.navbar-gitlab .container-fluid .nav>li>a {
  color:rgba(0,0,0,0.55);
- font-size:18px;
+ font-size:1.125rem;
  padding:0;
  margin:11px 3px;
  margin-left:8px;
@@ -8339,7 +8339,7 @@ header.navbar-gitlab .container-fluid .nav>li>a:hover svg,header.navbar-gitlab .
  fill:rgba(0,0,0,0.85)
 }
 header.navbar-gitlab .container-fluid .nav>li>a .fa-caret-down {
- font-size:14px
+ font-size:0.875rem
 }
 header.navbar-gitlab .container-fluid .nav>li>a svg {
  position:relative;
@@ -8366,14 +8366,14 @@ header .global-dropdown {
  left:-10px
 }
 header .global-dropdown .badge {
- font-size:11px
+ font-size:0.6875rem
 }
 header .global-dropdown li.active a {
  font-weight:bold
 }
 header .global-dropdown-toggle {
  margin:7px 0;
- font-size:18px;
+ font-size:1.125rem;
  padding:6px 10px;
  border:none;
  background-color:#fafafa
@@ -8425,7 +8425,7 @@ header .header-content .title {
  position:relative;
  padding-right:20px;
  margin:0;
- font-size:18px;
+ font-size:1.125rem;
  line-height:22px;
  display:inline-block;
  font-weight:normal;
@@ -8456,7 +8456,7 @@ header .header-content .title .dropdown-toggle-caret {
  width:12px;
  line-height:19px;
  padding:0;
- font-size:10px;
+ font-size:0.625rem;
  text-align:center;
  cursor:pointer
 }
@@ -8488,7 +8488,7 @@ header .impersonation i {
  top:-3px;
  font-weight:normal;
  margin-left:-12px;
- font-size:11px;
+ font-size:0.6875rem;
  color:#fff;
  padding:1px 5px 2px;
  border-radius:7px;
@@ -8505,7 +8505,7 @@ header .impersonation i {
 }
 @media (max-width: 767px) {
  header .container-fluid {
-  font-size:18px
+  font-size:1.125rem
  }
  header .container-fluid .navbar-nav {
   display:table;
@@ -8560,7 +8560,7 @@ header .impersonation i {
  border:none;
  border-radius:0;
  font-family:"Menlo", "Liberation Mono", "Consolas", "DejaVu Sans Mono", "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace;
- font-size:12px;
+ font-size:0.75rem;
  line-height:19px;
  margin:0;
  overflow:auto;
@@ -8593,7 +8593,7 @@ header .impersonation i {
 .file-content.code .line-numbers a {
  font-family:"Menlo", "Liberation Mono", "Consolas", "DejaVu Sans Mono", "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace;
  display:block;
- font-size:12px !important;
+ font-size:0.75rem !important;
  line-height:19px;
  white-space:nowrap
 }
@@ -8617,7 +8617,7 @@ header .impersonation i {
  float:left;
  margin-right:10px;
  color:#fff;
- font-size:14px;
+ font-size:0.875rem;
  line-height:25px
 }
 @media (min-width: 768px) {
@@ -8643,7 +8643,7 @@ header .impersonation i {
 }
 .ui-widget {
  font-family:-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
- font-size:14px
+ font-size:0.875rem
 }
 .ui-widget .ui-state-default {
  border:1px solid #fff;
@@ -8709,7 +8709,7 @@ header .impersonation i {
  top:3px
 }
 .well-list>li .well-title {
- font-size:14px;
+ font-size:0.875rem;
  line-height:18px
 }
 ul.bordered-list,ul.unstyled-list {
@@ -8791,7 +8791,7 @@ ul.content-list>li.light a,ul.content-list>li.description-block a {
 }
 ul.content-list li {
  border-color:#f0f0f0;
- font-size:14px;
+ font-size:0.875rem;
  color:rgba(0,0,0,0.85)
 }
 ul.content-list li.no-description .title {
@@ -9096,7 +9096,7 @@ ul.indent-list {
  margin-top:-11.5px;
  margin-left:-15px;
  opacity:0;
- font-size:30px;
+ font-size:1.875rem;
  transition:opacity 200ms ease-in-out;
  pointer-events:none
 }
@@ -9105,7 +9105,7 @@ ul.indent-list {
  bottom:10px;
  right:5px;
  opacity:0;
- font-size:20px;
+ font-size:1.25rem;
  transition:opacity 200ms ease-in-out
 }
 .div-dropzone-wrapper .div-dropzone .div-dropzone-icon {
@@ -9118,7 +9118,7 @@ ul.indent-list {
  top:7px;
  left:-40px;
  width:35px;
- font-size:13px;
+ font-size:0.8125rem;
  text-align:right
 }
 .div-dropzone-wrapper .div-dropzone .dz-preview {
@@ -9249,7 +9249,7 @@ ul.indent-list {
  }
  .nav-links>li>a {
   padding:10px;
-  font-size:12px;
+  font-size:0.75rem;
   margin-right:3px
  }
  .nav-links>li>a .badge {
@@ -9298,7 +9298,7 @@ ul.indent-list {
   padding-left:15px !important
  }
  .nav-links li a,.nav-links li a {
-  font-size:14px;
+  font-size:0.875rem;
   padding:19px 10px
  }
  .activity-filter-block {
@@ -9329,7 +9329,7 @@ ul.indent-list {
  top:30%;
  padding:5px 15px;
  background:#eee;
- font-size:20px;
+ font-size:1.25rem;
  color:#777;
  z-index:100;
  box-shadow:0 1px 2px #ddd
@@ -9367,7 +9367,7 @@ body.modal-open {
 .nav-links li a {
  padding:10px;
  padding-bottom:11px;
- font-size:14px;
+ font-size:0.875rem;
  line-height:28px;
  color:rgba(0,0,0,0.55);
  border-bottom:2px solid transparent;
@@ -9580,7 +9580,7 @@ body.modal-open {
  color:#7e7c7c
 }
 .layout-nav .controls .fa-rss,.layout-nav .controls .fa-cog {
- font-size:16px
+ font-size:1rem
 }
 .layout-nav .controls .fa-caret-down {
  margin-left:5px;
@@ -9643,7 +9643,7 @@ body.modal-open {
 .scrolling-tabs-container .fade-right .fa {
  position:relative;
  top:5px;
- font-size:18px
+ font-size:1.125rem
 }
 .scrolling-tabs-container .fade-right .fa {
  right:-7px
@@ -9670,7 +9670,7 @@ body.modal-open {
 .scrolling-tabs-container .fade-left .fa {
  position:relative;
  top:5px;
- font-size:18px
+ font-size:1.125rem
 }
 .scrolling-tabs-container .fade-left .fa {
  left:-7px
@@ -9696,7 +9696,7 @@ body.modal-open {
 .scrolling-tabs-container.sub-nav-scroll .fade-right .fa {
  position:relative;
  top:5px;
- font-size:18px
+ font-size:1.125rem
 }
 .scrolling-tabs-container.sub-nav-scroll .fade-right .fa {
  right:-23px
@@ -9722,7 +9722,7 @@ body.modal-open {
 .scrolling-tabs-container.sub-nav-scroll .fade-left .fa {
  position:relative;
  top:5px;
- font-size:18px
+ font-size:1.125rem
 }
 .scrolling-tabs-container.sub-nav-scroll .fade-left .fa {
  left:10px
@@ -9760,7 +9760,7 @@ body.modal-open {
 .nav-block .nav-links .fade-right .fa {
  position:relative;
  top:5px;
- font-size:18px
+ font-size:1.125rem
 }
 .nav-block .nav-links .fade-right .fa {
  right:-7px
@@ -9786,7 +9786,7 @@ body.modal-open {
 .nav-block .nav-links .fade-left .fa {
  position:relative;
  top:5px;
- font-size:18px
+ font-size:1.125rem
 }
 .nav-block .nav-links .fade-left .fa {
  left:-7px
@@ -9858,7 +9858,7 @@ body.modal-open {
 .inner-page-scroll-tabs .fade-right .fa {
  position:relative;
  top:5px;
- font-size:18px
+ font-size:1.125rem
 }
 .inner-page-scroll-tabs .fade-right .fa {
  right:5px
@@ -9885,7 +9885,7 @@ body.modal-open {
 .inner-page-scroll-tabs .fade-left .fa {
  position:relative;
  top:5px;
- font-size:18px
+ font-size:1.125rem
 }
 .inner-page-scroll-tabs .fade-left .fa {
  left:5px
@@ -10000,7 +10000,7 @@ body.modal-open {
  border-color:#e5e5e5;
  height:35px;
  padding:6px 10px;
- font-size:14px;
+ font-size:0.875rem;
  line-height:1.42857143;
  border-radius:3px
 }
@@ -10066,7 +10066,7 @@ body.modal-open {
 }
 .select2-container-multi .select2-choices .select2-search-field input {
  padding:5px 8px;
- font-size:13px;
+ font-size:0.8125rem;
  height:auto;
  font-family:inherit;
  font-size:inherit
@@ -10093,7 +10093,7 @@ body.modal-open {
 }
 .select2-drop-active {
  margin-top:6px;
- font-size:14px
+ font-size:0.875rem
 }
 .select2-drop-active.select2-drop-above {
  margin-bottom:8px
@@ -10402,7 +10402,7 @@ pre.plain-readme {
  border:none;
  padding:0;
  margin:0;
- font-size:14px
+ font-size:0.875rem
 }
 .monospace,.file-editor .file-title,.file-editor .editor-file-name,.git-clone-holder .form-control,.git-clone-holder .search form,.search .git-clone-holder form {
  font-family:"Menlo", "Liberation Mono", "Consolas", "DejaVu Sans Mono", "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace;
@@ -10443,7 +10443,7 @@ a>code {
 .wiki kbd {
  display:inline-block;
  padding:3px 5px;
- font-size:11px;
+ font-size:0.6875rem;
  line-height:10px;
  color:#555;
  vertical-align:middle;
@@ -10523,7 +10523,7 @@ a>code {
 }
 .wiki pre {
  margin-bottom:16px;
- font-size:13px;
+ font-size:0.8125em;
  line-height:1.6em;
  overflow-x:auto;
  border-radius:2px
@@ -10619,7 +10619,7 @@ a>code {
 .md kbd {
  display:inline-block;
  padding:3px 5px;
- font-size:11px;
+ font-size:0.6875rem;
  line-height:10px;
  color:#555;
  vertical-align:middle;
@@ -10699,7 +10699,7 @@ a>code {
 }
 .md pre {
  margin-bottom:16px;
- font-size:13px;
+ font-size:0.8125rem;
  line-height:1.6em;
  overflow-x:auto;
  border-radius:2px
@@ -10769,7 +10769,7 @@ a>code {
 }
 textarea.js-gfm-input {
  font-family:"Menlo", "Liberation Mono", "Consolas", "DejaVu Sans Mono", "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace;
- font-size:13px
+ font-size:0.8125rem
 }
 .strikethrough {
  text-decoration:line-through
@@ -10815,7 +10815,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {
  box-shadow:none;
  border-radius:0;
  color:#000;
- font-size:20px;
+ font-size:1.25rem;
  line-height:26px;
  padding:30px;
  display:block;
@@ -10850,7 +10850,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {
  position:absolute;
  right:10px;
  padding:5px;
- font-size:36px
+ font-size:2.25rem
 }
 .zen-control-leave:hover {
  color:#000
@@ -10874,7 +10874,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {
 .blank-state-icon {
  padding-bottom:20px;
  color:#c4c4c4;
- font-size:56px
+ font-size:3.5rem
 }
 .blank-state-icon path,.blank-state-icon polygon {
  fill:currentColor
@@ -10882,19 +10882,19 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {
 .blank-state-title {
  margin-top:0;
  margin-bottom:5px;
- font-size:18px;
+ font-size:1.125rem;
  font-weight:normal
 }
 .blank-state-text {
  margin-top:0;
  margin-bottom:16px;
- font-size:14px
+ font-size:0.875rem
 }
 .blank-state-text>strong {
  font-weight:600
 }
 .blank-state-welcome-title {
- font-size:24px
+ font-size:1.5rem
 }
 .info-well {
  background:#fafafa;
@@ -10934,7 +10934,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {
 .well-centered h1 {
  font-weight:normal;
  text-align:center;
- font-size:48px
+ font-size:3rem
 }
 .page-content-header {
  line-height:34px;
@@ -10952,7 +10952,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {
 }
 .page-content-header .header-action-buttons i {
  color:rgba(0,0,0,0.55);
- font-size:13px;
+ font-size:0.8125rem;
  margin-right:3px
 }
 @media (max-width: 767px) {
@@ -10995,7 +10995,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder {
  padding:16px;
  z-index:300;
  width:300px;
- font-size:14px;
+ font-size:0.875rem;
  background-color:#fff;
  border:1px solid #f2f2f2;
  border-radius:3px;
@@ -16657,7 +16657,7 @@ gl-emoji {
  padding:16px 0
 }
 .snippet-title {
- font-size:24px;
+ font-size:1.5rem;
  font-weight:600
 }
 .snippet-edited-ago {
@@ -18935,7 +18935,7 @@ gl-emoji {
 }
 .issue-board-dropdown-content>p {
  margin:0;
- font-size:14px
+ font-size:0.875rem
 }
 .issue-boards-page .content-wrapper {
  padding-bottom:0
@@ -18945,7 +18945,7 @@ gl-emoji {
 }
 .boards-app-loading {
  width:100%;
- font-size:34px
+ font-size:2.125rem
 }
 .boards-list {
  height:calc(100vh - 152px);
@@ -18984,7 +18984,7 @@ gl-emoji {
 }
 .board-inner {
  height:100%;
- font-size:14px;
+ font-size:0.875rem;
  background:#fafafa;
  border:1px solid #e5e5e5;
  border-radius:2px
@@ -19168,7 +19168,7 @@ gl-emoji {
  margin-right:6px
 }
 .card-number {
- font-size:12px;
+ font-size:0.75rem;
  color:rgba(0,0,0,0.55)
 }
 .issue-boards-search {
@@ -19181,7 +19181,7 @@ gl-emoji {
 .board-list-count {
  padding:10px 0;
  color:rgba(0,0,0,0.55);
- font-size:13px
+ font-size:0.8125rem
 }
 .board-list-count>.fa {
  margin-right:5px
@@ -19301,7 +19301,7 @@ gl-emoji {
 }
 .add-issues-header>h2 {
  margin:0;
- font-size:18px
+ font-size:1.125rem
 }
 .add-issues-search {
  display:-webkit-flex;
@@ -19348,7 +19348,7 @@ gl-emoji {
  width:100%;
  padding-left:6px;
  padding-right:6px;
- font-size:35px
+ font-size:2.1875rem
 }
 .add-issues-footer {
  margin:auto -15px 0;
@@ -19370,7 +19370,7 @@ gl-emoji {
  background-color:#1f78d1;
  color:#fff;
  border:1px solid #1b69b6;
- font-size:9px;
+ font-size:0.5625rem;
  line-height:15px;
  border-radius:50%
 }
@@ -19421,7 +19421,7 @@ gl-emoji {
 .divergence-graph .graph-side .count {
  padding-top:6px;
  padding-bottom:0;
- font-size:12px;
+ font-size:0.75rem;
  color:rgba(0,0,0,0.85);
  display:block
 }
@@ -19474,10 +19474,10 @@ gl-emoji {
  white-space:pre-wrap;
  overflow:auto;
  overflow-y:hidden;
- font-size:12px
+ font-size:0.75rem
 }
 .build-page pre.trace .fa-spinner {
- font-size:24px;
+ font-size:1.5rem;
  margin-left:20px
 }
 .build-page .environment-information {
@@ -19621,11 +19621,11 @@ gl-emoji {
  color:#c4c4c4;
  white-space:pre;
  overflow-x:auto;
- font-size:12px;
+ font-size:0.75rem;
  position:relative
 }
 .build-trace .fa-spinner {
- font-size:24px
+ font-size:1.5rem
 }
 .build-trace .bash {
  display:block
@@ -19745,7 +19745,7 @@ gl-emoji {
  background-color:#f6fafd
 }
 .right-sidebar.build-sidebar .builds-container .build-job .fa-refresh {
- font-size:13px;
+ font-size:0.8125rem;
  margin-left:3px
 }
 .build-sidebar .container-fluid.container-limited {
@@ -19772,7 +19772,7 @@ gl-emoji {
 .ci-body .project-title {
  margin:0;
  color:#444;
- font-size:20px;
+ font-size:1.25rem;
  line-height:1.5
 }
 .ci-body .builds .light,.ci-body .builds .description-block,.ci-body .projects-table .light,.ci-body .projects-table .description-block {
@@ -19801,7 +19801,7 @@ gl-emoji {
  border-radius:0
 }
 .ci-body .loading {
- font-size:20px
+ font-size:1.25rem
 }
 .ci-body .ci-charts fieldset {
  margin-bottom:16px
@@ -19894,7 +19894,7 @@ gl-emoji {
  background-color:#fafafa;
  border-bottom:1px solid #eee;
  border-top:1px solid #eee;
- font-size:14px
+ font-size:0.875rem
 }
 .commit-header:first-child {
  border-top-width:0
@@ -19918,7 +19918,7 @@ gl-emoji {
  border:1px solid #e3e3e3;
  border-radius:2px;
  margin-left:5px;
- font-size:14px;
+ font-size:0.875rem;
  line-height:14px;
  outline:none
 }
@@ -19979,7 +19979,7 @@ gl-emoji {
  vertical-align:baseline
 }
 .commit .commit-row-description,.generic_commit_status .commit-row-description {
- font-size:14px;
+ font-size:0.875rem;
  padding:10px 15px;
  margin:10px 0;
  background:#fafafa;
@@ -19998,7 +19998,7 @@ gl-emoji {
  color:rgba(0,0,0,0.85)
 }
 .commit.inline-commit .commit-row-title,.generic_commit_status.inline-commit .commit-row-title {
- font-size:13px
+ font-size:0.8125rem
 }
 .commit.inline-commit .committed_ago,.generic_commit_status.inline-commit .committed_ago {
  float:right
@@ -20114,7 +20114,7 @@ gl-emoji {
  }
 }
 #cycle-analytics .panel .column .header {
- font-size:30px;
+ font-size:1.875rem;
  line-height:38px;
  font-weight:normal;
  margin:0
@@ -20142,7 +20142,7 @@ gl-emoji {
 }
 #cycle-analytics .content-list .title-col p.title {
  line-height:19px;
- font-size:14px;
+ font-size:0.875rem;
  font-weight:600;
  color:rgba(0,0,0,0.85)
 }
@@ -20165,7 +20165,7 @@ gl-emoji {
  height:136px
 }
 #cycle-analytics .fa-spinner {
- font-size:28px;
+ font-size:1.75rem;
  position:relative;
  margin-left:-20px;
  left:50%;
@@ -20178,7 +20178,7 @@ gl-emoji {
 #cycle-analytics .stage-nav,#cycle-analytics .stage-entries {
  display:flex;
  vertical-align:top;
- font-size:14px
+ font-size:0.875rem
 }
 #cycle-analytics .stage-nav {
  width:40%;
@@ -20307,12 +20307,12 @@ gl-emoji {
  text-align:right
 }
 #cycle-analytics .stage-event-item .total-time {
- font-size:19px;
+ font-size:1.1875rem;
  color:rgba(0,0,0,0.85)
 }
 #cycle-analytics .stage-event-item .total-time span {
  color:rgba(0,0,0,0.85);
- font-size:14px
+ font-size:0.875rem
 }
 #cycle-analytics .stage-event-item .issue-date,#cycle-analytics .stage-event-item .build-date {
  color:rgba(0,0,0,0.85)
@@ -20365,7 +20365,7 @@ gl-emoji {
 }
 #cycle-analytics .item-build-component .item-title .fa {
  color:rgba(0,0,0,0.55);
- font-size:12px
+ font-size:0.75rem
 }
 #cycle-analytics .empty-stage,#cycle-analytics .no-access-stage {
  text-align:center;
@@ -20520,7 +20520,7 @@ gl-emoji {
 }
 .diff-file .diff-content table .line_holder td {
  line-height:1.6;
- font-size:12px
+ font-size:0.75rem
 }
 .diff-file .diff-content table .line_holder td.noteable_line {
  position:relative
@@ -20616,7 +20616,7 @@ gl-emoji {
  border:1px solid #63c363
 }
 .diff-file .image .image-info {
- font-size:12px;
+ font-size:0.75rem;
  margin:5px 0 0;
  color:grey
 }
@@ -21131,7 +21131,7 @@ gl-emoji {
 }
 .environments-list-loading {
  width:100%;
- font-size:34px
+ font-size:2.125rem
 }
 .environments-folder-name {
  font-weight:normal;
@@ -21199,7 +21199,7 @@ gl-emoji {
  color:rgba(0,0,0,0.55)
 }
 .environments-container .table.ci-table .stop-env-link .stop-env-icon,.environments-container .file-holder table.ci-table .stop-env-link .stop-env-icon,.file-holder .environments-container table.ci-table .stop-env-link .stop-env-icon,.environments-container .wiki table.ci-table .stop-env-link .stop-env-icon,.wiki .environments-container table.ci-table .stop-env-link .stop-env-icon,.environments-container .md table.ci-table .stop-env-link .stop-env-icon,.md .environments-container table.ci-table .stop-env-link .stop-env-icon,.environments-container ul.notes .note .note-body .note-text table.ci-table .stop-env-link .stop-env-icon,ul.notes .note .note-body .note-text .environments-container table.ci-table .stop-env-link .stop-env-icon,.environments-container .table.ci-table .external-url .stop-env-icon,.environments-container .file-holder table.ci-table .external-url .stop-env-icon,.file-holder .environments-container table.ci-table .external-url .stop-env-icon,.environments-container .wiki table.ci-table .external-url .stop-env-icon,.wiki .environments-container table.ci-table .external-url .stop-env-icon,.environments-container .md table.ci-table .external-url .stop-env-icon,.md .environments-container table.ci-table .external-url .stop-env-icon,.environments-container ul.notes .note .note-body .note-text table.ci-table .external-url .stop-env-icon,ul.notes .note .note-body .note-text .environments-container table.ci-table .external-url .stop-env-icon {
- font-size:14px
+ font-size:0.875rem
 }
 .environments-container .table.ci-table .deployment .build-column .build-link,.environments-container .file-holder table.ci-table .deployment .build-column .build-link,.file-holder .environments-container table.ci-table .deployment .build-column .build-link,.environments-container .wiki table.ci-table .deployment .build-column .build-link,.wiki .environments-container table.ci-table .deployment .build-column .build-link,.environments-container .md table.ci-table .deployment .build-column .build-link,.md .environments-container table.ci-table .deployment .build-column .build-link,.environments-container ul.notes .note .note-body .note-text table.ci-table .deployment .build-column .build-link,ul.notes .note .note-body .note-text .environments-container table.ci-table .deployment .build-column .build-link {
  color:rgba(0,0,0,0.85)
@@ -21304,7 +21304,7 @@ gl-emoji {
  width:38px
 }
 .event-item {
- font-size:14px;
+ font-size:0.875rem;
  padding:10px 0 10px 40px;
  border-bottom:1px solid #f0f0f0;
  color:rgba(0,0,0,0.85);
@@ -21358,7 +21358,7 @@ gl-emoji {
  word-wrap:break-word
 }
 .event-item .event-body .event-note .md {
- font-size:14px
+ font-size:0.875rem
 }
 .event-item .event-body .event-note .md .label,.event-item .event-body .event-note .md .shortcut-mappings .key,.shortcut-mappings .event-item .event-body .event-note .md .key {
  color:rgba(0,0,0,0.85);
@@ -21390,7 +21390,7 @@ gl-emoji {
 .event-item .event-body .event-note-icon {
  color:#777;
  float:left;
- font-size:14px;
+ font-size:0.875rem;
  line-height:16px;
  margin-right:5px
 }
@@ -21416,7 +21416,7 @@ gl-emoji {
  border:none
 }
 .event-item .event_commits li.commit .commit-row-title {
- font-size:14px
+ font-size:0.875rem
 }
 .event-item .event_commits li.commits-stat {
  display:block;
@@ -21441,7 +21441,7 @@ gl-emoji {
  white-space:nowrap;
  max-width:100%;
  padding:4px 0;
- font-size:13px;
+ font-size:0.8125rem;
  float:left;
  margin-right:-150px;
  padding-right:150px;
@@ -21475,7 +21475,7 @@ gl-emoji {
 }
 .project-network .controls {
  color:#888;
- font-size:14px;
+ font-size:0.875rem;
  padding:5px;
  border-bottom:1px solid #e5e5e5;
  background:#eee
@@ -21604,7 +21604,7 @@ gl-emoji {
  margin:0
 }
 .documentation-index h2 {
- font-size:20px
+ font-size:1.25rem
 }
 .documentation-index li {
  line-height:24px;
@@ -21614,7 +21614,7 @@ gl-emoji {
  margin-right:3px
 }
 .shortcut-mappings {
- font-size:12px;
+ font-size:0.75rem;
  color:#555
 }
 .shortcut-mappings tbody:first-child tr:first-child {
@@ -21832,7 +21832,7 @@ gl-emoji {
 .right-sidebar.right-sidebar-expanded .username {
  display:block;
  margin-top:4px;
- font-size:13px;
+ font-size:0.8125rem;
  font-weight:normal
 }
 .right-sidebar.right-sidebar-expanded .hide-expanded {
@@ -22069,7 +22069,7 @@ gl-emoji {
 .issuable-meta {
  display:inline-block;
  line-height:18px;
- font-size:14px
+ font-size:0.875rem
 }
 .js-issuable-selector-wrap .js-issuable-selector {
  width:100%
@@ -22148,7 +22148,7 @@ gl-emoji {
  margin-top:5px
 }
 .time_tracker .compare-display-container .compare-display {
- font-size:13px;
+ font-size:0.8125rem;
  color:#888
 }
 .time_tracker .compare-display-container .compare-display .compare-value {
@@ -22229,14 +22229,14 @@ ul.related-merge-requests>li .merge-request-info {
  margin-left:5px
 }
 .merge-requests-title,.related-branches-title {
- font-size:16px;
+ font-size:1rem;
  font-weight:600
 }
 .merge-request-id {
  display:inline-block
 }
 .merge-request-status {
- font-size:13px;
+ font-size:0.8125rem;
  padding:0 5px;
  color:#fff;
  height:20px;
@@ -22353,7 +22353,7 @@ ul.related-merge-requests>li .merge-request-info {
 }
 .create-mr-dropdown-wrap li:not(.divider) .description {
  padding-left:30px;
- font-size:13px
+ font-size:0.8125rem
 }
 .create-mr-dropdown-wrap li:not(.divider) .description strong {
  display:block;
@@ -22457,7 +22457,7 @@ ul.related-merge-requests>li .merge-request-info {
 }
 .label-row .label,.label-row .shortcut-mappings .key,.shortcut-mappings .label-row .key {
  padding:8px 9px 9px;
- font-size:14px
+ font-size:0.875rem
 }
 .color-label {
  padding:3px 7px;
@@ -22486,7 +22486,7 @@ ul.related-merge-requests>li .merge-request-info {
  color:rgba(0,0,0,0.85)
 }
 .manage-labels-list .btn-action .fa {
- font-size:18px;
+ font-size:1.125rem;
  vertical-align:middle
 }
 .manage-labels-list .btn-action:hover {
@@ -22528,7 +22528,7 @@ ul.related-merge-requests>li .merge-request-info {
  border-color:transparent;
  padding:5px 8px;
  vertical-align:top;
- font-size:14px
+ font-size:0.875rem
 }
 .toggle-priority button:hover {
  border-color:transparent
@@ -22592,11 +22592,11 @@ ul.related-merge-requests>li .merge-request-info {
  vertical-align:text-top
 }
 .ci-body .incorrect-syntax {
- font-size:18px;
+ font-size:1.125rem;
  color:#db3b21
 }
 .ci-body .correct-syntax {
- font-size:18px;
+ font-size:1.125rem;
  color:#1aaa55
 }
 .ci-linter .ci-editor {
@@ -22615,21 +22615,21 @@ ul.related-merge-requests>li .merge-request-info {
  margin-bottom:16px
 }
 .login-page .brand-holder {
- font-size:18px;
+ font-size:1.125rem;
  line-height:1.5
 }
 .login-page .brand-holder p {
- font-size:16px;
+ font-size:1rem;
  color:#888
 }
 .login-page .brand-holder h1:first-child {
  font-weight:normal;
  margin-bottom:0.68em;
  margin-top:0;
- font-size:34px
+ font-size:2.125rem
 }
 .login-page .brand-holder h3 {
- font-size:22px
+ font-size:1.375rem
 }
 .login-page .brand-holder img {
  max-width:100%;
@@ -22639,7 +22639,7 @@ ul.related-merge-requests>li .merge-request-info {
  font-weight:bold
 }
 .login-page p {
- font-size:13px
+ font-size:0.8125rem
 }
 .login-page .login-box,.login-page .omniauth-container {
  box-shadow:0 0 0 1px #e5e5e5;
@@ -22666,7 +22666,7 @@ ul.related-merge-requests>li .merge-request-info {
  background:transparent
 }
 .login-page .login-box .login-body,.login-page .omniauth-container .login-body {
- font-size:13px
+ font-size:0.8125rem
 }
 .login-page .login-box .login-body input+p,.login-page .omniauth-container .login-body input+p {
  margin-top:5px
@@ -22704,7 +22704,7 @@ ul.related-merge-requests>li .merge-request-info {
 }
 .login-page .new-session-tabs li a {
  width:100%;
- font-size:18px
+ font-size:1.125rem
 }
 .login-page .new-session-tabs li a:hover,.login-page .new-session-tabs li .participants-more .btn-link:hover,.participants-more .login-page .new-session-tabs li .btn-link:hover,.login-page .new-session-tabs li .user-list-more .btn-link:hover,.user-list-more .login-page .new-session-tabs li .btn-link:hover {
  border:1px solid transparent
@@ -22731,7 +22731,7 @@ ul.related-merge-requests>li .merge-request-info {
  border-top:1px solid #e5e5e5
 }
 .login-page .new-session-tabs.custom-provider-tabs a {
- font-size:16px
+ font-size:1rem
 }
 .login-page .form-control:active,.login-page .search form:active,.search .login-page form:active,.login-page .form-control:focus,.login-page .common-note-form .md-area.is-focused,.common-note-form .login-page .md-area.is-focused,.login-page .search form:focus,.search .login-page form:focus,.login-page .search.search-active form,.search.search-active .login-page form {
  background-color:#fff
@@ -22747,7 +22747,7 @@ ul.related-merge-requests>li .merge-request-info {
 }
 .login-page .devise-errors h2 {
  margin-top:0;
- font-size:14px;
+ font-size:0.875rem;
  color:#a62d19
 }
 @media (max-width: 767px) {
@@ -23301,7 +23301,7 @@ ul.related-merge-requests>li .merge-request-info {
 }
 #conflicts .line_content.header button {
  border-radius:2px;
- font-size:10px;
+ font-size:0.625rem;
  position:absolute;
  right:10px;
  padding:0;
@@ -23503,7 +23503,7 @@ ul.related-merge-requests>li .merge-request-info {
 }
 .mr-state-widget .normal {
  color:rgba(0,0,0,0.85);
- font-size:15px
+ font-size:0.9375rem
 }
 .mr-state-widget .capitalize {
  text-transform:capitalize
@@ -23525,7 +23525,7 @@ ul.related-merge-requests>li .merge-request-info {
  margin-left:5px
 }
 .mr-state-widget .mr-widget-body .btn {
- font-size:15px
+ font-size:0.9375rem
 }
 .mr-state-widget .mr-widget-body .btn-group .btn {
  padding:5px 10px
@@ -23535,7 +23535,7 @@ ul.related-merge-requests>li .merge-request-info {
 }
 .mr-state-widget .mr-widget-body h4 {
  font-weight:bold;
- font-size:15px;
+ font-size:0.9375rem;
  margin:5px 0;
  color:rgba(0,0,0,0.85)
 }
@@ -23557,11 +23557,11 @@ ul.related-merge-requests>li .merge-request-info {
 }
 .mr-state-widget .mr-widget-body .bold {
  font-weight:bold;
- font-size:15px;
+ font-size:0.9375rem;
  color:#5c5c5c
 }
 .mr-state-widget .mr-widget-body .state-label {
- font-size:16px;
+ font-size:1rem;
  font-weight:bold;
  padding-right:10px
 }
@@ -23608,10 +23608,10 @@ ul.related-merge-requests>li .merge-request-info {
 }
 @media (max-width: 767px) {
  .mr-state-widget .mr-widget-body h4 {
-  font-size:14px
+  font-size:0.875rem
  }
  .mr-state-widget .mr-widget-body p {
-  font-size:13px
+  font-size:0.8125rem
  }
  .mr-state-widget .mr-widget-body .btn,.mr-state-widget .mr-widget-body .btn-group,.mr-state-widget .mr-widget-body .accept-action {
   margin-bottom:4px
@@ -23965,7 +23965,7 @@ ul.related-merge-requests>li .merge-request-info {
 }
 .mr-memory-usage p.usage-info-loading .usage-info-load-spinner {
  margin-right:10px;
- font-size:16px
+ font-size:1rem
 }
 @media (max-width: 992px) {
  .mr-memory-usage .mr-info-list.mr-memory-usage .legend {
@@ -24022,7 +24022,7 @@ ul.related-merge-requests>li .merge-request-info {
  margin:0
 }
 .milestone-sidebar .collapsed-milestone-date {
- font-size:12px
+ font-size:0.75rem
 }
 .milestone-sidebar .milestone-date {
  display:block
@@ -24193,7 +24193,7 @@ ul.related-merge-requests>li .merge-request-info {
  margin:auto;
  margin-top:0;
  text-align:center;
- font-size:12px
+ font-size:0.75rem
 }
 @media (max-width: 991px) {
  .confidential-issue-warning {
@@ -24209,7 +24209,7 @@ ul.related-merge-requests>li .merge-request-info {
 }
 .note-edit-form {
  display:none;
- font-size:14px
+ font-size:0.875rem
 }
 .note-edit-form .md-area {
  background-color:#fff
@@ -24273,7 +24273,7 @@ ul.related-merge-requests>li .merge-request-info {
  width:100%
 }
 .discussion-notes-count {
- font-size:16px
+ font-size:1rem
 }
 .edit_note .markdown-area {
  min-height:140px;
@@ -24294,7 +24294,7 @@ ul.related-merge-requests>li .merge-request-info {
  padding:0;
  background:none;
  border:0;
- font-size:14px;
+ font-size:0.875rem;
  line-height:16px
 }
 .toolbar-button:hover,.toolbar-button:focus {
@@ -24316,10 +24316,10 @@ ul.related-merge-requests>li .merge-request-info {
  top:1px;
  margin-right:3px;
  color:inherit;
- font-size:16px
+ font-size:1rem
 }
 .toolbar-text {
- font-size:14px;
+ font-size:0.875rem;
  line-height:16px
 }
 @media (min-width: 992px) {
@@ -24544,7 +24544,7 @@ ul.notes .note .note-body .note-text pre code {
 ul.notes .note .note-body .note-text kbd {
  display:inline-block;
  padding:3px 5px;
- font-size:11px;
+ font-size:0.6875rem;
  line-height:10px;
  color:#555;
  vertical-align:middle;
@@ -24624,7 +24624,7 @@ ul.notes .note .note-body .note-text table:dir(rtl) th {
 }
 ul.notes .note .note-body .note-text pre {
  margin-bottom:16px;
- font-size:13px;
+ font-size:0.8125rem;
  line-height:1.6em;
  overflow-x:auto;
  border-radius:2px
@@ -24729,7 +24729,7 @@ ul.notes .note .note-emoji-button.is-loading .fa-spinner {
  display:inline-block
 }
 ul.notes .system-note {
- font-size:14px;
+ font-size:0.875rem;
  padding:0;
  clear:both
 }
@@ -24800,7 +24800,7 @@ ul.notes .system-note .note-body .note-text.system-note-commit-list ul {
 }
 ul.notes .system-note .note-body .note-text.system-note-commit-list ul .gfm-commit {
  font-family:"Menlo", "Liberation Mono", "Consolas", "DejaVu Sans Mono", "Ubuntu Mono", "Courier New", "andale mono", "lucida console", monospace;
- font-size:12px
+ font-size:0.75rem
 }
 ul.notes .system-note .note-body .note-text.system-note-commit-list p:first-child {
  display:none
@@ -24894,7 +24894,7 @@ ul.notes .system-note .note-body .note-text.system-note-commit-list.hide-shade::
  color:rgba(0,0,0,0.85)
 }
 .discussion-header {
- font-size:14px
+ font-size:0.875rem
 }
 .note-header {
  display:flex;
@@ -24977,7 +24977,7 @@ ul.notes .system-note .note-body .note-text.system-note-commit-list.hide-shade::
 .note-action-button .fa {
  color:#c4c4c4;
  position:relative;
- font-size:17px
+ font-size:1.0625rem
 }
 .note-action-button svg {
  height:16px;
@@ -25017,7 +25017,7 @@ ul.notes .system-note .note-body .note-text.system-note-commit-list.hide-shade::
  background-color:transparent;
  border:0;
  line-height:20px;
- font-size:13px;
+ font-size:0.8125rem;
  transition:color 0.1s linear
 }
 .discussion-toggle-button:hover {
@@ -25030,7 +25030,7 @@ ul.notes .system-note .note-body .note-text.system-note-commit-list.hide-shade::
 }
 .discussion-toggle-button .fa {
  margin-right:3px;
- font-size:10px;
+ font-size:0.625rem;
  line-height:18px;
  vertical-align:top
 }
@@ -25041,7 +25041,7 @@ ul.notes .system-note .note-body .note-text.system-note-commit-list.hide-shade::
  padding-left:4px;
  padding-right:4px;
  color:rgba(0,0,0,0.55);
- font-size:12px;
+ font-size:0.75rem;
  line-height:20px;
  border:1px solid #e5e5e5;
  border-radius:3px
@@ -25052,7 +25052,7 @@ ul.notes .system-note .note-body .note-text.system-note-commit-list.hide-shade::
  border-radius:50%;
  background:#fff;
  padding:1px 5px;
- font-size:12px;
+ font-size:0.75rem;
  color:#1f78d1;
  margin-left:-55px;
  position:absolute;
@@ -25193,7 +25193,7 @@ ul.notes .system-note .note-body .note-text.system-note-commit-list.hide-shade::
  top:1px
 }
 .notification .fa {
- font-size:18px
+ font-size:1.125rem
 }
 .js-pipeline-schedule-form .dropdown-select,.js-pipeline-schedule-form .dropdown-menu-toggle {
  width:100% !important
@@ -25203,7 +25203,7 @@ ul.notes .system-note .note-body .note-text.system-note-commit-list.hide-shade::
 }
 .interval-pattern-form-group label {
  margin-right:10px;
- font-size:12px
+ font-size:0.75rem
 }
 .interval-pattern-form-group label[for='custom'] {
  margin-right:0
@@ -25216,7 +25216,7 @@ ul.notes .system-note .note-body .note-text.system-note-commit-list.hide-shade::
 }
 .interval-pattern-form-group .cron-syntax-link-wrap {
  margin-right:10px;
- font-size:12px
+ font-size:0.75rem
 }
 .pipeline-schedule-table-row .branch-name-cell {
  max-width:300px;
@@ -25251,7 +25251,7 @@ ul.notes .system-note .note-body .note-text.system-note-commit-list.hide-shade::
  margin-right:3px
 }
 .pipelines .realtime-loading {
- font-size:40px;
+ font-size:2.5rem;
  text-align:center;
  margin:0 auto
 }
@@ -25313,7 +25313,7 @@ ul.notes .system-note .note-body .note-text.system-note-commit-list.hide-shade::
 }
 .pipelines .table.ci-table .pipeline-actions .dropdown-toggle .fa,.pipelines .file-holder table.ci-table .pipeline-actions .dropdown-toggle .fa,.file-holder .pipelines table.ci-table .pipeline-actions .dropdown-toggle .fa,.pipelines .wiki table.ci-table .pipeline-actions .dropdown-toggle .fa,.wiki .pipelines table.ci-table .pipeline-actions .dropdown-toggle .fa,.pipelines .md table.ci-table .pipeline-actions .dropdown-toggle .fa,.md .pipelines table.ci-table .pipeline-actions .dropdown-toggle .fa,.pipelines ul.notes .note .note-body .note-text table.ci-table .pipeline-actions .dropdown-toggle .fa,ul.notes .note .note-body .note-text .pipelines table.ci-table .pipeline-actions .dropdown-toggle .fa,.pipelines .table.ci-table .pipeline-actions .dropdown-menu-toggle .fa,.pipelines .file-holder table.ci-table .pipeline-actions .dropdown-menu-toggle .fa,.file-holder .pipelines table.ci-table .pipeline-actions .dropdown-menu-toggle .fa,.pipelines .wiki table.ci-table .pipeline-actions .dropdown-menu-toggle .fa,.wiki .pipelines table.ci-table .pipeline-actions .dropdown-menu-toggle .fa,.pipelines .md table.ci-table .pipeline-actions .dropdown-menu-toggle .fa,.md .pipelines table.ci-table .pipeline-actions .dropdown-menu-toggle .fa,.pipelines ul.notes .note .note-body .note-text table.ci-table .pipeline-actions .dropdown-menu-toggle .fa,ul.notes .note .note-body .note-text .pipelines table.ci-table .pipeline-actions .dropdown-menu-toggle .fa,.pipelines .table.ci-table .pipeline-actions .dropdown-menu .fa,.pipelines .file-holder table.ci-table .pipeline-actions .dropdown-menu .fa,.file-holder .pipelines table.ci-table .pipeline-actions .dropdown-menu .fa,.pipelines .wiki table.ci-table .pipeline-actions .dropdown-menu .fa,.wiki .pipelines table.ci-table .pipeline-actions .dropdown-menu .fa,.pipelines .md table.ci-table .pipeline-actions .dropdown-menu .fa,.md .pipelines table.ci-table .pipeline-actions .dropdown-menu .fa,.pipelines ul.notes .note .note-body .note-text table.ci-table .pipeline-actions .dropdown-menu .fa,ul.notes .note .note-body .note-text .pipelines table.ci-table .pipeline-actions .dropdown-menu .fa {
  color:rgba(0,0,0,0.55);
- font-size:14px
+ font-size:0.875rem
 }
 .pipelines .table.ci-table .pipeline-actions .btn-group.open .btn-default,.pipelines .file-holder table.ci-table .pipeline-actions .btn-group.open .btn-default,.file-holder .pipelines table.ci-table .pipeline-actions .btn-group.open .btn-default,.pipelines .wiki table.ci-table .pipeline-actions .btn-group.open .btn-default,.wiki .pipelines table.ci-table .pipeline-actions .btn-group.open .btn-default,.pipelines .md table.ci-table .pipeline-actions .btn-group.open .btn-default,.md .pipelines table.ci-table .pipeline-actions .btn-group.open .btn-default,.pipelines ul.notes .note .note-body .note-text table.ci-table .pipeline-actions .btn-group.open .btn-default,ul.notes .note .note-body .note-text .pipelines table.ci-table .pipeline-actions .btn-group.open .btn-default {
  background-color:#f0f0f0;
@@ -25386,7 +25386,7 @@ ul.notes .system-note .note-body .note-text.system-note-commit-list.hide-shade::
  fill:rgba(0,0,0,0.55)
 }
 .table.ci-table .branch-commit .fa,.file-holder table.ci-table .branch-commit .fa,.wiki table.ci-table .branch-commit .fa,.md table.ci-table .branch-commit .fa,ul.notes .note .note-body .note-text table.ci-table .branch-commit .fa {
- font-size:12px;
+ font-size:0.75rem;
  color:rgba(0,0,0,0.85)
 }
 .table.ci-table .branch-commit .commit-id,.file-holder table.ci-table .branch-commit .commit-id,.wiki table.ci-table .branch-commit .commit-id,.md table.ci-table .branch-commit .commit-id,ul.notes .note .note-body .note-text table.ci-table .branch-commit .commit-id {
@@ -25422,7 +25422,7 @@ ul.notes .system-note .note-body .note-text.system-note-commit-list.hide-shade::
  white-space:nowrap
 }
 .table.ci-table .duration .fa,.file-holder table.ci-table .duration .fa,.wiki table.ci-table .duration .fa,.md table.ci-table .duration .fa,ul.notes .note .note-body .note-text table.ci-table .duration .fa,.table.ci-table .finished-at .fa,.file-holder table.ci-table .finished-at .fa,.wiki table.ci-table .finished-at .fa,.md table.ci-table .finished-at .fa,ul.notes .note .note-body .note-text table.ci-table .finished-at .fa {
- font-size:12px;
+ font-size:0.75rem;
  margin-right:4px
 }
 .table.ci-table .duration svg,.file-holder table.ci-table .duration svg,.wiki table.ci-table .duration svg,.md table.ci-table .duration svg,ul.notes .note .note-body .note-text table.ci-table .duration svg,.table.ci-table .finished-at svg,.file-holder table.ci-table .finished-at svg,.wiki table.ci-table .finished-at svg,.md table.ci-table .finished-at svg,ul.notes .note .note-body .note-text table.ci-table .finished-at svg {
@@ -25689,7 +25689,7 @@ ul.notes .system-note .note-body .note-text.system-note-commit-list.hide-shade::
 .dropdown-counter-badge {
  color:#e5e5e5;
  font-weight:100;
- font-size:15px;
+ font-size:0.9375rem;
  position:absolute;
  right:13px;
  top:8px
@@ -25724,7 +25724,7 @@ ul.notes .system-note .note-body .note-text.system-note-commit-list.hide-shade::
  visibility:hidden;
  opacity:0;
  color:inherit;
- font-size:12px;
+ font-size:0.75rem;
  transition:visibility 0.1s, opacity 0.1s linear
 }
 .mini-pipeline-graph-dropdown-toggle:active,.mini-pipeline-graph-dropdown-toggle:focus,.mini-pipeline-graph-dropdown-toggle:hover {
@@ -25821,7 +25821,7 @@ ul.notes .system-note .note-body .note-text.system-note-commit-list.hide-shade::
  cursor:pointer;
  float:right;
  margin:-26px 9px 0 0;
- font-size:12px;
+ font-size:0.75rem;
  background-color:#fff
 }
 .big-pipeline-graph-dropdown-menu a.ci-action-icon-wrapper:hover,.big-pipeline-graph-dropdown-menu .participants-more .ci-action-icon-wrapper.btn-link:hover,.participants-more .big-pipeline-graph-dropdown-menu .ci-action-icon-wrapper.btn-link:hover,.big-pipeline-graph-dropdown-menu .user-list-more .ci-action-icon-wrapper.btn-link:hover,.user-list-more .big-pipeline-graph-dropdown-menu .ci-action-icon-wrapper.btn-link:hover,.big-pipeline-graph-dropdown-menu a.ci-action-icon-wrapper:focus,.mini-pipeline-graph-dropdown-menu a.ci-action-icon-wrapper:hover,.mini-pipeline-graph-dropdown-menu .participants-more .ci-action-icon-wrapper.btn-link:hover,.participants-more .mini-pipeline-graph-dropdown-menu .ci-action-icon-wrapper.btn-link:hover,.mini-pipeline-graph-dropdown-menu .user-list-more .ci-action-icon-wrapper.btn-link:hover,.user-list-more .mini-pipeline-graph-dropdown-menu .ci-action-icon-wrapper.btn-link:hover,.mini-pipeline-graph-dropdown-menu a.ci-action-icon-wrapper:focus {
@@ -26294,14 +26294,14 @@ table.u2f-registrations th:not(:last-child),table.u2f-registrations td:not(:last
 .project-home-panel .project-title,.project-home-panel .group-title,.group-home-panel .project-title,.group-home-panel .group-title {
  margin-top:10px;
  margin-bottom:10px;
- font-size:24px;
+ font-size:1.5rem;
  font-weight:400;
  line-height:1;
  word-wrap:break-word
 }
 .project-home-panel .project-title .fa,.project-home-panel .group-title .fa,.group-home-panel .project-title .fa,.group-home-panel .group-title .fa {
  margin-left:2px;
- font-size:12px;
+ font-size:0.75rem;
  vertical-align:middle
 }
 .project-home-panel .project-home-desc,.project-home-panel .group-home-desc,.group-home-panel .project-home-desc,.group-home-panel .group-home-desc {
@@ -26424,7 +26424,7 @@ table.u2f-registrations th:not(:last-child),table.u2f-registrations td:not(:last
  border-radius:2px;
  border-width:1px;
  border-style:solid;
- font-size:13px;
+ font-size:0.8125rem;
  font-weight:600;
  line-height:13px;
  padding:6px 16px;
@@ -26476,7 +26476,7 @@ table.u2f-registrations th:not(:last-child),table.u2f-registrations td:not(:last
 }
 .project-visibility-level-holder .radio i {
  margin:2px 0;
- font-size:20px
+ font-size:1.25rem
 }
 .project-visibility-level-holder .radio .option-title {
  font-weight:normal;
@@ -26581,7 +26581,7 @@ a.deploy-project-label:hover,.participants-more .deploy-project-label.btn-link:h
  border-radius:50%
 }
 .fork-namespaces .row .fork-thumbnail .no-avatar i {
- font-size:100px;
+ font-size:6.25rem;
  color:#f0f0f0
 }
 .fork-namespaces .row .fork-thumbnail a {
@@ -26644,7 +26644,7 @@ a.deploy-project-label:hover,.participants-more .deploy-project-label.btn-link:h
 .project-stats .nav>li>a {
  padding:0;
  background-color:transparent;
- font-size:14px;
+ font-size:0.875rem;
  line-height:29px;
  color:rgba(0,0,0,0.55)
 }
@@ -26676,7 +26676,7 @@ pre.light-well,pre.description-block {
 .git-empty .light-well,.git-empty .description-block {
  border-radius:2px;
  color:#5b6169;
- font-size:13px;
+ font-size:0.8125rem;
  line-height:1.6em
 }
 .project-footer {
@@ -26684,7 +26684,7 @@ pre.light-well,pre.description-block {
 }
 .project-footer .btn-remove {
  border-radius:3px;
- font-size:14px;
+ font-size:0.875rem;
  font-weight:400;
  padding:6px 10px;
  background-color:#db3b21;
@@ -26767,7 +26767,7 @@ pre.light-well,pre.description-block {
  margin-right:15px
 }
 .projects-list h3 {
- font-size:14px
+ font-size:0.875rem
 }
 .projects-list a {
  color:rgba(0,0,0,0.85)
@@ -26867,7 +26867,7 @@ pre.light-well,pre.description-block {
 }
 .git-clone-holder .form-control,.git-clone-holder .search form,.search .git-clone-holder form {
  background:#fff;
- font-size:14px;
+ font-size:0.875rem;
  margin-left:-1px;
  cursor:auto;
  width:101%
@@ -27157,7 +27157,7 @@ input[type="checkbox"]:hover {
 }
 .search .search-input {
  border:none;
- font-size:14px;
+ font-size:0.875rem;
  padding:0 20px 0 0;
  margin-left:5px;
  line-height:25px;
@@ -27167,7 +27167,7 @@ input[type="checkbox"]:hover {
  line-height:25px;
  padding:0 5px;
  border-radius:2px;
- font-size:14px;
+ font-size:0.875rem;
  font-style:normal;
  color:#b2b2b2;
  display:inline-block;
@@ -27211,7 +27211,7 @@ input[type="checkbox"]:hover {
 }
 .search .search-input-wrap .dropdown-header {
  text-transform:uppercase;
- font-size:11px
+ font-size:0.6875rem
 }
 .search .search-input-wrap .dropdown-menu {
  transition-property:opacity, transform;
@@ -27328,7 +27328,7 @@ input[type="checkbox"]:hover {
 }
 .settings-list-icon {
  color:rgba(0,0,0,0.55);
- font-size:18px;
+ font-size:1.125rem;
  line-height:42px
 }
 .settings-message {
@@ -27378,7 +27378,7 @@ table .sherlock-code {
  margin-bottom:0 !important
 }
 .sherlock-line-samples-table thead tr th,.sherlock-line-samples-table tbody tr td {
- font-size:13px !important;
+ font-size:0.8125rem !important;
  text-align:right;
  padding:0 10px !important
 }
@@ -27400,7 +27400,7 @@ table .sherlock-code {
 }
 .axis {
  fill:#aaa;
- font-size:10px
+ font-size:0.625rem
 }
 #contributors-master {
  position:relative;
@@ -27661,7 +27661,7 @@ table .sherlock-code {
  font-weight:normal;
  padding:0 5px;
  line-height:inherit;
- font-size:14px
+ font-size:0.875rem
 }
 .todo-item .action-name {
  font-weight:normal
@@ -27671,7 +27671,7 @@ table .sherlock-code {
 }
 .todo-item .todo-body .todo-note .md {
  color:#7f8fa4;
- font-size:14px
+ font-size:0.875rem
 }
 .todo-item .todo-body .todo-note .md .label,.todo-item .todo-body .todo-note .md .shortcut-mappings .key,.shortcut-mappings .todo-item .todo-body .todo-note .md .key {
  color:rgba(0,0,0,0.85);
@@ -27932,7 +27932,7 @@ table .sherlock-code {
  border-bottom:none
 }
 .repo-charts .commit-stats li {
- font-size:16px
+ font-size:1rem
 }
 .repo-charts .tree-ref-header {
  margin-bottom:20px
@@ -27974,7 +27974,7 @@ table .sherlock-code {
 }
 .wiki-page-header .wiki-page-title {
  margin:0;
- font-size:22px
+ font-size:1.375rem
 }
 .wiki-page-header .wiki-last-edit-by {
  display:block;
@@ -27990,7 +27990,7 @@ table .sherlock-code {
 .wiki-page-header .git-access-header {
  padding:16px 40px 11px 0;
  line-height:28px;
- font-size:18px
+ font-size:1.125rem
 }
 .wiki-page-header .git-clone-holder {
  width:100%;
@@ -28026,7 +28026,7 @@ table .sherlock-code {
  margin:16px 0
 }
 .wiki-git-access h3 {
- font-size:22px;
+ font-size:1.375rem;
  font-weight:normal;
  margin-top:1.4em
 }

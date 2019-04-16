@@ -1,6 +1,7 @@
 var client = new XMLHttpRequest();
 client.open('GET', document.URL);
 client.setRequestHeader('Content-type', 'text/plain; charset=UTF-8');
+
 client.onloadend = function() {
 	const getURL = (typeof browser === 'undefined') ? chrome.extension.getURL : browser.extension.getURL;
 
@@ -10,19 +11,19 @@ client.onloadend = function() {
 	const gitlabStyle = document.createElement('link');
 	gitlabStyle.rel = 'stylesheet';
 	gitlabStyle.type = 'text/css';
-	gitlabStyle.href = getURL('css/gitlab.css');
+	gitlabStyle.href = getURL('assets/style/gitlab.css');
 	document.head.appendChild(gitlabStyle);
 
 	const highlightStyle = document.createElement('link');
 	highlightStyle.rel = 'stylesheet';
 	highlightStyle.type = 'text/css';
-	highlightStyle.href = getURL('css/highlight.css');
+	highlightStyle.href = getURL('assets/style/highlight.css');
 	document.head.appendChild(highlightStyle);
 
 	const mathStyle = document.createElement('link');
 	mathStyle.rel = 'stylesheet';
 	mathStyle.type = 'text/css';
-	mathStyle.href = getURL('css/katex.min.css');
+	mathStyle.href = getURL('assets/style/katex.min.css');
 	document.head.appendChild(mathStyle);
 
 	// This is considered a good practice for mobiles.
@@ -104,4 +105,18 @@ client.onloadend = function() {
 		}, 0);
 	}
 }
+
 client.send();
+
+async function main () {
+	try {
+		// Settings
+		let options = await browser.storage.local.get()
+		options.fontSize = typeof options.fontSize === 'undefined' ? '16px' : options.fontSize + 'px'
+		document.querySelector('body').setAttribute('style', 'font-size:' + options.fontSize )
+	} catch (error) {
+		console.error(error)
+	}
+}
+
+main ()
