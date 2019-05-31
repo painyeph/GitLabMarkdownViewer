@@ -1,41 +1,44 @@
 /*---------------------------------------------------------------------------------------------
- *  Copyright (c) Stefan Goessner - 2017-18. All rights reserved.
+ *  Copyright (c) Stefan Goessner - 2017-19. All rights reserved.
  *  Licensed under the MIT License. See License.txt in the project root for license information.
  *--------------------------------------------------------------------------------------------*/
 'use strict';
 
-function texmath(md, options) {
-    let delimiters = options && options.delimiters || 'dollars';
+function texmath(md,options) {
+    let delimiters = options && options.delimiters || 'dollars',
+        macros = options && options.macros;
 
     if (delimiters in texmath.rules) {
         for (let rule of texmath.rules[delimiters].inline) {
             md.inline.ruler.before('escape', rule.name, texmath.inline(rule));  // ! important
-            md.renderer.rules[rule.name] = (tokens, idx) => rule.tmpl.replace(/\$1/,texmath.render(tokens[idx].content,false));
+            md.renderer.rules[rule.name] = (tokens, idx) => rule.tmpl.replace(/\$1/,texmath.render(tokens[idx].content,false,macros));
         }
 
         for (let rule of texmath.rules[delimiters].block) {
             md.block.ruler.before('fence', rule.name, texmath.block(rule));
             md.renderer.rules[rule.name] = (tokens, idx) => rule.tmpl.replace(/\$2/,tokens[idx].info)  // equation number .. ?
-                                                                     .replace(/\$1/,texmath.render(tokens[idx].content,true));
+                                                                     .replace(/\$1/,texmath.render(tokens[idx].content,true,macros));
         }
     }
 }
 
-texmath.applyRule = function(rule, str, beg) {
+texmath.applyRule = function(rule, str, beg, inBlockquote) {
     let pre, match, post;
     rule.rex.lastIndex = beg;
+
     pre = str.startsWith(rule.tag,beg) && (!rule.pre || rule.pre(str,beg));
     match = pre && rule.rex.exec(str);
     if (match) {
         match.lastIndex = rule.rex.lastIndex;
-        post = !rule.post || rule.post(str, match.lastIndex-1);
+        post = (!rule.post || rule.post(str, match.lastIndex-1))  // valid post-condition
+            && (!inBlockquote || !match[1].includes('\n'));       // remove evil blockquote bug (https://github.com/goessner/mdmath/issues/50)
     }
     rule.rex.lastIndex = 0;
-//    if (post && match) console.log("found: "+match)
+
     return post && match;
 }
 
-// texmath.inline = (rule) => dollar;
+// texmath.inline = (rule) => dollar;  // just for testing ..
 
 texmath.inline = (rule) => 
     function(state, silent) {
@@ -53,13 +56,13 @@ texmath.inline = (rule) =>
 
 texmath.block = (rule) => 
     function(state, begLine, endLine, silent) {
-        let res = texmath.applyRule(rule, state.src, state.bMarks[begLine] + state.tShift[begLine]);
+        let res = texmath.applyRule(rule, state.src, state.bMarks[begLine] + state.tShift[begLine], state.parentType==='blockquote');
         if (res) {
             if (!silent) {
                 let token = state.push(rule.name, 'math', 0);
                 token.block = true;
                 token.content = res[1];
-                token.info = res[2];
+                token.info = res[res.length-1];
                 token.markup = rule.tag;
             }
             for (let line=begLine, endpos=res.lastIndex-1; line < endLine; line++)
@@ -68,15 +71,14 @@ texmath.block = (rule) =>
                     break;
                 }
             state.pos = res.lastIndex;
-//console.log(`endlL=${state.line}, pos=${res.lastIndex}`)
         }
         return !!res;
     }
 
-texmath.render = function(tex,isblock) {
+texmath.render = function(tex,displayMode,macros) {
     let res;
     try {
-        res = texmath.katex.renderToString(tex,{throwOnError:false,displayMode:isblock}); //.replace(/([_*])/g, "\\$1"); // escaped underscore bug ...
+        res = texmath.katex.renderToString(tex,{throwOnError:false,displayMode,macros});
     }
     catch(err) {
         res = tex+": "+err.message.replace("<","&lt;");
@@ -150,14 +152,14 @@ texmath.rules = {
                 tag: '\\('
             }
         ],
-        block: [ 
+        block: [
             {   name: 'math_block_eqno',
-                rex: /\\\[\s*?(.+?)\\\]\s*?\(([^)$\r\n]+?)\)/gmy,
+                rex: /\\\[(((?!\\\]|\\\[)[\s\S])+?)\\\]\s*?\(([^)$\r\n]+?)\)/gmy,
                 tmpl: '<section class="eqno"><eqn>$1</eqn><span>($2)</span></section>',
                 tag: '\\['
             },
             {   name: 'math_block',
-                rex: /\\\[(.+?)\\\]/gmy,
+                rex: /\\\[([\s\S]+?)\\\]/gmy,
                 tmpl: '<section><eqn>$1</eqn></section>',
                 tag: '\\['
             }
@@ -184,6 +186,27 @@ texmath.rules = {
             }
         ]
     },
+    kramdown: {
+        inline: [ 
+            {   name: 'math_inline', 
+                rex: /\${2}([^$\r\n]*?)\${2}/gy,
+                tmpl: '<eq>$1</eq>',
+                tag: '$$'
+            }
+        ],
+        block: [
+            {   name: 'math_block_eqno',
+                rex: /\${2}([^$]*?)\${2}\s*?\(([^)$\r\n]+?)\)/gmy,
+                tmpl: '<section class="eqno"><eqn>$1</eqn><span>($2)</span></section>',
+                tag: '$$'
+            },
+            {   name: 'math_block',
+                rex: /\${2}([^$]*?)\${2}/gmy,
+                tmpl: '<section><eqn>$1</eqn></section>',
+                tag: '$$'
+            }
+        ]
+    },
     dollars: {
         inline: [ 
             {   name: 'math_inline', 
@@ -201,7 +224,7 @@ texmath.rules = {
                 post: texmath.$_post
             }
         ],
-        block: [ 
+        block: [
             {   name: 'math_block_eqno',
                 rex: /\${2}([^$]*?)\${2}\s*?\(([^)$\r\n]+?)\)/gmy,
                 tmpl: '<section class="eqno"><eqn>$1</eqn><span>($2)</span></section>',
@@ -213,7 +236,7 @@ texmath.rules = {
                 tag: '$$'
             }
         ]
-    },
+    }
 };
 
 if (typeof module === "object" && module.exports)

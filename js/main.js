@@ -13,16 +13,16 @@ client.onloadend = function() {
 	gitlabStyle.href = getURL('css/gitlab.css');
 	document.head.appendChild(gitlabStyle);
 
-	const highlightStyle = document.createElement('link');
-	highlightStyle.rel = 'stylesheet';
-	highlightStyle.type = 'text/css';
-	highlightStyle.href = getURL('css/highlight.css');
-	document.head.appendChild(highlightStyle);
+	const prismStyle = document.createElement('link');
+	prismStyle.rel = 'stylesheet';
+	prismStyle.type = 'text/css';
+	prismStyle.href = getURL('css/prism.css');
+	document.head.appendChild(prismStyle);
 
 	const mathStyle = document.createElement('link');
 	mathStyle.rel = 'stylesheet';
 	mathStyle.type = 'text/css';
-	mathStyle.href = getURL('css/katex.min.css');
+	mathStyle.href = getURL('css/katex.css');
 	document.head.appendChild(mathStyle);
 
 	// This is considered a good practice for mobiles.
@@ -37,19 +37,9 @@ client.onloadend = function() {
 	markdownRoot.innerHTML = markdownit({
 		html: true,
 		linkify: true,
-		// Shameless copypasta https://github.com/markdown-it/markdown-it#syntax-highlighting
 		highlight: function (str, lang) {
-			if (lang && hljs.getLanguage(lang)) {
-				try {
-					return hljs.highlight(lang, str).value;
-				} catch (__) {}
-			}
-
-			try {
-				return hljs.highlightAuto(str).value;
-			} catch (__) {}
-
-			return ''; // use external default escaping
+			if (!Prism.languages[lang]) return '';
+			return Prism.highlight(str, Prism.languages[lang]);
 		}
 	}).use(texmath.use(katex), {delimiters: 'gitlab'})
 	  .use(markdownitHTML5Embed, { html5embed: { useImageSyntax: true } })
