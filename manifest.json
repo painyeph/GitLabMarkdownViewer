@@ -2,7 +2,7 @@
 
   "manifest_version": 2,
   "name": "GitLab Markdown Viewer",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "Renders markdown files in GitLab style.",
 
   "icons": {
@@ -37,6 +37,7 @@
     "css/fonts/KaTeX_Main-BoldItalic.woff2",
     "css/fonts/KaTeX_Main-Italic.woff2",
     "css/fonts/KaTeX_Main-Regular.woff2",
+    "css/fonts/KaTeX_Math-BoldItalic.woff2",
     "css/fonts/KaTeX_Math-Italic.woff2",
     "css/fonts/KaTeX_SansSerif-Bold.woff2",
     "css/fonts/KaTeX_SansSerif-Italic.woff2",
