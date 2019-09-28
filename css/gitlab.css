@@ -1375,8 +1375,8 @@ pre {
  word-break:break-all;
  word-wrap:break-word;
  color:rgba(0,0,0,0.85);
- background-color:#ffffff;
- border:1px solid #e5e5e5;
+ background-color:#eaeaea;
+ border:1px solid #b7b7b7;
  border-radius:3px
 }
 pre code {
