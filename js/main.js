@@ -1,9 +1,6 @@
-var client = new XMLHttpRequest();
-client.open('GET', document.URL);
-client.setRequestHeader('Content-type', 'text/plain; charset=UTF-8');
-client.onloadend = function() {
-	const getURL = (typeof browser === 'undefined') ? chrome.extension.getURL : browser.extension.getURL;
+	const getURL = (typeof browser === 'undefined') ? chrome.runtime.getURL : browser.runtime.getURL;
 
+	const markdownText = document.body.textContent;
 	document.body.textContent = '';
 
 	// Style the page and code highlights.
@@ -43,7 +40,7 @@ client.onloadend = function() {
 		}
 	}).use(texmath.use(katex), {delimiters: 'gitlab'})
 	  .use(markdownitHTML5Embed, { html5embed: { useImageSyntax: true } })
-	  .render(client.responseText);
+	  .render(markdownText);
 
 	// Trample out script elements.
 	markdownRoot.querySelectorAll('script').forEach(each => {
@@ -93,5 +90,3 @@ client.onloadend = function() {
 			}
 		}, 0);
 	}
-}
-client.send();
