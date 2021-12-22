@@ -867,7 +867,9 @@ pre {
 }
 code,kbd,pre,samp {
  font-family:monospace, monospace;
- font-size:1em
+ font-size:1em;
+ -moz-tab-size: 4;
+ tab-size: 4;
 }
 button,input,optgroup,select,textarea {
  color:inherit;
